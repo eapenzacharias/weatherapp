@@ -1,0 +1,26 @@
+html body .search-bar {
+  height: 40px;
+  width: 100%;
+}
+
+html body .search-bar #autocomplete {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  height: 100%;
+  color: #ffffff;
+}
+
+html body .search-bar .algolia-places {
+  width: 100%;
+  height: 40px;
+}
+
+html body #search {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

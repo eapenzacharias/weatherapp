@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
+  <script src="bundle.js" async></script>
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="search-bar">
+
+    </div>
+    <div class="search-bar">
+      <input type="text" id='autocomplete' />
+      <button id="search">Check Weather</button>
+    </div>
+
+    <script>
+      (function() {
+        // const appId = process.env.SEARCHID;
+        // const appSec = process.env.SEARCHSEC;
+        var placesAutocomplete = places({
+          appId: 'plH5ZDEU8PVD',
+          apiKey: '44054bfaac8e96b587b8cf11662093fa',
+          container: document.querySelector('#autocomplete'),
+          templates: {
+            value: function(suggestion) {
+              return suggestion.name;
+            }
+          }
+        }).configure({
+          type: 'city',
+          aroundLatLngViaIP: false,
+        });
+      })();
+    </script>
+  </div>
+
+  <div class="report container">
+
+  </div>
+
+</body>
+
+</html>
