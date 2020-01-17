@@ -1,4 +1,4 @@
-import { displayInit } from './dom';
+import displayInit from './dom';
 import './assets/css/style.css';
 
 const search = document.getElementById('search');

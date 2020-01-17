@@ -24,12 +24,12 @@ async function displayInit(city) {
   document.getElementById('location').innerHTML = `${weather.city}, ${weather.country}`;
 
   tempC(weather);
-  document.getElementById('in-c').onclick = function() {
+  document.getElementById('in-c').onclick = function callTempC() {
     tempC(weather);
   };
-  document.getElementById('in-f').onclick = function() {
+  document.getElementById('in-f').onclick = function callTempF() {
     tempF(weather);
   };
 }
 
-export { displayInit };
+export default displayInit;
