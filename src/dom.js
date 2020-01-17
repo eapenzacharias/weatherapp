@@ -15,17 +15,21 @@ function tempF(weather) {
 }
 
 async function displayInit(city) {
-  let weather = await reportWeather(city);
+  const weather = await reportWeather(city);
 
   const icon = document.createElement('img');
   icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.icon}.png`);
   document.getElementById('weather-icon').innerHTML = icon.outerHTML;
   document.getElementById('weather-report').innerHTML = weather.text;
-  document.getElementById('location').innerHTML = `${weather.city}, ${weather.country}`
+  document.getElementById('location').innerHTML = `${weather.city}, ${weather.country}`;
 
   tempC(weather);
-  document.getElementById('in-c').onclick = function() { tempC(weather); }
-  document.getElementById('in-f').onclick = function() { tempF(weather); }
+  document.getElementById('in-c').onclick = function() {
+    tempC(weather);
+  };
+  document.getElementById('in-f').onclick = function() {
+    tempF(weather);
+  };
 }
 
-export { displayInit }
+export { displayInit };

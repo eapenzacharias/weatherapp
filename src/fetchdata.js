@@ -7,7 +7,7 @@ async function fetchData(city) {
 
 async function reportWeather(city) {
   const data = await fetchData(city);
-  var report = {};
+  let report = {};
 
   report.tempC = (parseFloat(data.main.temp) - 273.15).toFixed(1);
   report.tempF = ((parseFloat(data.main.temp) - 273.15) * 9 / 5 + 32).toFixed(1);
