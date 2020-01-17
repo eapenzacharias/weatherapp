@@ -1,10 +1,20 @@
 html {
   body {
+    background-image: url('../images/bg.jpg');
+    font-family: 'Montserrat', sans-serif;
+    .container {
+      max-width: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: hsla(0, 0%, 0%, 0.5);
+    }
     .search-bar {
-      height: 40px;
       width: 100%;
+      margin-bottom: 26px;
       #autocomplete {
-        background-color: hsla(0, 0%, 0%, 0.5);
+        background-color: hsla(0, 0%, 0%, 0.35);
         border: none;
         height: 100%;
         color: #ffffff;
@@ -15,12 +25,47 @@ html {
       }
     }
     #search {
-      margin-top: 10px;
-      height: 100%;
+      font-weight: 700;
+      margin: 10px auto 20px auto;
+      height: 40px;
       width: 100%;
-      background-color: hsla(0, 0%, 0%, 0.5);
+      background-color: hsla(0, 0%, 0%, 0.35);
       border: none;
       color: white;
+    }
+    .report {
+      color: #fff;
+      text-align: center;
+      #main-temp {
+        font-size: 82px;
+        font-weight: 700;
+        margin: 35px auto;
+      }
+      #location {
+        font-size: 28px;
+      }
+      .feels-like-div {
+        margin-top: 12px;
+      }
+      .min-max {
+        margin: 12px auto;
+      }
+      .selector {
+        button {
+          font-weight: 700;
+          margin: 4px;
+          height: 40px;
+          width: 48%;
+          background-color: hsla(0, 0%, 0%, 0.5);
+          border: none;
+          color: white;
+        }
+      }
+      .weather {
+        height: 26px;
+        font-size: 24px;
+        font-weight: 700;
+      }
     }
   }
 }

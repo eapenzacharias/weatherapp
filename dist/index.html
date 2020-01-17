@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
   <script src="bundle.js" async></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <title>Weather App</title>
 </head>
 
@@ -22,8 +23,6 @@
 
     <script>
       (function() {
-        // const appId = process.env.SEARCHID;
-        // const appSec = process.env.SEARCHSEC;
         var placesAutocomplete = places({
           appId: 'plH5ZDEU8PVD',
           apiKey: '44054bfaac8e96b587b8cf11662093fa',
@@ -39,12 +38,15 @@
         });
       })();
     </script>
+    <div class="report">
+      <div class="weather"><span id="weather-icon"></span><span id="weather-report">Sunny</span></div>
+      <div id="main-temp"> -- &#8451;</div>
+      <div id="location">New York, US</div>
+      <div class="feels-like-div">Feels like <span id=feels-like>--  &#8451;</span></div>
+      <div class="min-max">Min: <span id="min-temp">-- &#8451;</span> &nbsp; Max: <span id="max-temp">-- &#8451;</span></div>
+      <div class="selector"><button id="in-c">Celsius &#8451;</button><button id="in-f">Fahrenheit &#8457;</button></div>
+    </div>
   </div>
-
-  <div class="report container">
-
-  </div>
-
 </body>
 
 </html>
