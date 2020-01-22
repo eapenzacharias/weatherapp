@@ -1,5 +1,8 @@
 html body {
   background-image: url("../images/bg.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -11,6 +14,15 @@ html body .container {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+html body .img-credit {
+  margin: 15px auto;
+}
+
+html body .img-credit #img-txt {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 html body .search-bar {

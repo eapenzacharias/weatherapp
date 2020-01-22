@@ -27,7 +27,8 @@
     "algoliasearch": "^3.35.1",
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
-    "dotenv-webpack": "^1.7.0"
+    "dotenv-webpack": "^1.7.0",
+    "unsplash-js": "^6.0.0"
   },
   "repository": {
     "type": "git",
