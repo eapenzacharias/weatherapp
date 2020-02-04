@@ -1,5 +1,5 @@
-import { reportWeather } from './fetchdata';
 import Unsplash, { toJson } from 'unsplash-js';
+import { reportWeather } from './fetchdata';
 
 function tempC(weather) {
   document.getElementById('main-temp').innerHTML = `${weather.tempC} &#8451;`;
@@ -25,7 +25,7 @@ async function imgUnsplash(text) {
   document.body.style.backgroundImage = `url(${bgJson.results[0].urls.full})`;
   const credit = document.getElementById('img-txt');
   credit.innerHTML = `Photo by ${bgJson.results[0].user.first_name} ${bgJson.results[0].user.last_name} from Unsplash`;
-  credit.href = `${bgJson.results[0].links.html}`
+  credit.href = `${bgJson.results[0].links.html}`;
 }
 
 async function displayInit(city) {
