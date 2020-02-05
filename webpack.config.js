@@ -1,4 +1,5 @@
 const path = require('path');
+// eslint-disable-next-line
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {

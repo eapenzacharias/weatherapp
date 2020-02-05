@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import Unsplash from 'unsplash-js';
 import { reportWeather } from './fetchdata';
 
