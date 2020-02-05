@@ -1,5 +1,6 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -8,18 +9,18 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader',
-        ],
-      },
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        'css-loader',
+      ],
+    },
+    {
+      test: /\.(png|svg|jpg|gif)$/,
+      use: [
+        'file-loader',
+      ],
+    },
     ],
   },
   plugins: [

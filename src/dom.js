@@ -1,4 +1,4 @@
-import Unsplash, { toJson } from 'unsplash-js';
+import Unsplash from 'unsplash-js';
 import { reportWeather } from './fetchdata';
 
 function tempC(weather) {
@@ -16,6 +16,7 @@ function tempF(weather) {
 }
 
 async function imgUnsplash(text) {
+  // eslint-disable-next-line prefer-destructuring
   const UACCESS = process.env.UACCESS;
   const unsplash = new Unsplash({
     accessKey: `${UACCESS}`,
