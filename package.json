@@ -1,0 +1,42 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "The Weather App project uses Asynchronous Javascript for fetching the weather data from OpenWeatherMap.com using API and displaying on the App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --dev-server"
+  },
+  "keywords": [],
+  "author": "Eapen Zacharias",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "file-loader": "^5.0.2",
+    "server": "^1.0.21",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev": "^1.1.1"
+  },
+  "dependencies": {
+    "algoliasearch": "^3.35.1",
+    "date-fns": "^2.8.1",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "places.js": "^1.17.1",
+    "unsplash-js": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eapenzacharias/weatherapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eapenzacharias/weatherapp/issues"
+  },
+  "homepage": "https://github.com/eapenzacharias/weatherapp#readme"
+}
