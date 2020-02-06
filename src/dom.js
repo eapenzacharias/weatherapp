@@ -17,8 +17,7 @@ function tempF(weather) {
 }
 
 async function imgUnsplash(text) {
-  // eslint-disable-next-line prefer-destructuring
-  const UACCESS = process.env.UACCESS;
+  const { UACCESS } = process.env;
   const unsplash = new Unsplash({
     accessKey: `${UACCESS}`,
   });

@@ -1,7 +1,6 @@
 async function fetchData(city) {
-  // eslint-disable-next-line prefer-destructuring
-  const APIKEY = process.env.APIKEY;
-  const response = await fetch(` https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${APIKEY}`, { mode: 'cors' });
+  const KEY = process.env.APIKEY;
+  const response = await fetch(` https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${KEY}`, { mode: 'cors' });
   const weatherData = await response.json();
   return weatherData;
 }

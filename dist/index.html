@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
   <script src="bundle.js" async></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <title>Weather App</title>
@@ -21,23 +20,6 @@
       <button id="search">Check Weather</button>
     </div>
 
-    <script>
-      (function() {
-        var placesAutocomplete = places({
-          appId: 'plH5ZDEU8PVD',
-          apiKey: '44054bfaac8e96b587b8cf11662093fa',
-          container: document.querySelector('#autocomplete'),
-          templates: {
-            value: function(suggestion) {
-              return suggestion.name;
-            }
-          }
-        }).configure({
-          type: 'city',
-          aroundLatLngViaIP: false,
-        });
-      })();
-    </script>
     <div class="report">
       <div class="weather"><span id="weather-icon"></span><span id="weather-report">Sunny</span></div>
       <div id="main-temp"> -- &#8451;</div>
