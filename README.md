@@ -8,5 +8,10 @@ The Weather App project uses Asynchronous Javascript for fetching the weather da
 * Javascript
 * CSS
 
+### APIs used
+* [OpenWeatherMap Weather API](https://openweathermap.org/api): Weather data
+* [Algolia Places API](https://community.algolia.com/places/): Autocomplete for city search
+* [Unsplash Image API](https://unsplash.com/developers): Related background images
+
 ## Author
 * [Eapen Zacharias](https://github.com/eapenzacharias)
