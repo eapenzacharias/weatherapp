@@ -1,0 +1,93 @@
+html body {
+  background-image: url("../images/bg.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html body .container {
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+html body .img-credit {
+  margin: 15px auto;
+}
+
+html body .img-credit #img-txt {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+html body .search-bar {
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+html body .search-bar #autocomplete {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: none;
+  height: 100%;
+  color: #ffffff;
+}
+
+html body .search-bar .algolia-places {
+  width: 100%;
+  height: 40px;
+}
+
+html body #search {
+  font-weight: 700;
+  margin: 10px auto 20px auto;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  border: none;
+  color: white;
+}
+
+html body .report {
+  color: #fff;
+  text-align: center;
+}
+
+html body .report #main-temp {
+  font-size: 82px;
+  font-weight: 700;
+  margin: 35px auto;
+}
+
+html body .report #location {
+  font-size: 28px;
+}
+
+html body .report .feels-like-div {
+  margin-top: 12px;
+}
+
+html body .report .min-max {
+  margin: 12px auto;
+}
+
+html body .report .selector button {
+  font-weight: 700;
+  margin: 4px;
+  height: 40px;
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+}
+
+html body .report .weather {
+  height: 26px;
+  font-size: 24px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
