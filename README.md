@@ -1,6 +1,5 @@
 # Weather App
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/eapenzacharias/weatherapp.svg)](https://greenkeeper.io/)
 
 The Weather App project uses Asynchronous Javascript for fetching the weather data from OpenWeatherMap.com using API and displaying on the App
 
